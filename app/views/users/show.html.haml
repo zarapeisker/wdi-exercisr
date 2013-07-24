@@ -4,11 +4,21 @@
   %b Email:
   = @user.email
 %p
-  %b Crypted password:
-  = @user.crypted_password
+  %b Name:
+  = @user.name
+
 %p
-  %b Salt:
-  = @user.salt
+  %b Exercises:
+  %br
+  %br
+  - @user.exercises.each do |exercise|
+    On
+    = exercise.completed
+    you
+    = exercise.activity
+    for
+    = exercise.value
+    = exercise.units
 
 = link_to 'Edit', edit_user_path(@user)
 \|
