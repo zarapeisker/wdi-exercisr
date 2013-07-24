@@ -1,4 +1,4 @@
-As usual, add your info to the `.env` file and run `rake db:setup`.
+As usual, add your info to the `.env` file and run `bundle install` and then `rake db:setup`.
 
 ```
 RACK_ENV=development
