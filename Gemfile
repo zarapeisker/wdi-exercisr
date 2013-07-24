@@ -41,3 +41,5 @@ gem 'unicorn'
 # gem 'debugger'
 
 gem 'quiet_assets'
+
+gem 'sorcery'
